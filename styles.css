@@ -1,0 +1,87 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #159279;
+}
+
+button:disabled {
+    background-color: #e0e0e0;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 40vh;
+    background-color: #f0f5f6;
+    border-radius: 5px;
+}
+
+.game > .scores {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.computerScore, .userScore {
+    text-align: center;
+}
+
+.computerScore > h1, .userScore > h1 {
+    padding-bottom: 20px;
+}
+
+.game > .gameText {
+    text-align: center;
+}
+
+.reset-button {
+    margin-top: 20px;
+    background-color: #e74c3c;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+    color: white;
+}
+
+.game > .buttons {
+    display: flex;
+
+    gap: 20px;
+}
